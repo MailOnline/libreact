@@ -5,7 +5,7 @@ import {linkTo} from '@storybook/addon-links';
 import {Portal} from '..';
 import ShowDocs from '../../../.storybook/ShowDocs'
 
-storiesOf('Other/Portal', module)
+storiesOf('UI/Portal', module)
   .add('Documentation', () => h(ShowDocs, {md: require('../../../docs/en/Portal.md')}))
   .add('Default props', () =>
     <div>
