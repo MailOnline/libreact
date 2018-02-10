@@ -23,7 +23,7 @@ export class Portal extends Component<IPortalProps, IPortalState> {
   }
 
   componentWillUpdate (props) {
-    if (props.el && !this.el) {
+    if (!props.el && !this.el) {
       this.createEl();
     }
   }
