@@ -97,6 +97,7 @@ const MyComponent = mock();
   - Other
      - [`<Resolve>`](./docs/en/Resolve.md), `<Fetch>`
      - [`getDisplayName()`](./docs/en/getDisplayName.md)
+     - [`<Portal>`](./docs/en/Portal.md)
      - `<Locales>`
      - `<Draggable>`, `<Droppable>`, `<Parallax>`, `<Pin>`
 

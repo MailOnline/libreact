@@ -66,6 +66,6 @@
   - Other
      - [`<Resolve>`](./Resolve.md), `<Fetch>`
      - [`getDisplayName()`](./getDisplayName.md)
-     - `<BrowserOnly>`, `<ServerOnly>`, and `<Environment>`
+     - [`<Portal>`](./Portal.md)
      - `<Locales>`
      - `<Draggable>`, `<Droppable>`, `<Parallax>`, `<Pin>`

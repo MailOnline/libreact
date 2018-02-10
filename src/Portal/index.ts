@@ -1,10 +1,11 @@
 import {Component} from 'react';
 import {createPortal} from 'react-dom';
-import {isClient} from '../util';
+import {isClient, noop} from '../util';
 
 export interface IPortalProps {
   children?: any;
   el?: HTMLElement;
+  onElement?: (element: HTMLElement) => void;
 }
 
 export interface IPortalState {
@@ -38,6 +39,8 @@ export class Portal extends Component<IPortalProps, IPortalState> {
   createEl () {
     this.el = document.createElement('div');
     document.body.appendChild(this.el);
+
+    (this.props.onElement || noop)(this.el);
   }
 
   render () {
