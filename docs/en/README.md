@@ -14,8 +14,10 @@
         - [`<List>`](./List.md), [`withList()`](./List.md#withlist-hoc), and [`@withList`](./List.md#withlist-decorator)
         - [`<Map>`](./Map.md), [`withMap()`](./Map.md#withmap-hoc), and [`@withMap`](./Map.md#withmap-decorator)
   - [Sensors](./Sensors.md)
+     - [`<ActiveSensor>`](./ActiveSensor.md), [`withActive()`](./ActiveSensor.md#withactive-hoc), and [`@withActive`](./ActiveSensor.md#withactive-decorator)
      - [`<BatterySensor>`](./BatterySensor.md), [`withBattery()`](./BatterySensor.md#withbattery), and [`@withBattery`](./BatterySensor.md#withbattery-1)
      - [`<ExitSensor>`](./ExitSensor.md)
+     - [`<FocusSensor>`](./FocusSensor.md), [`withFocus()`](./FocusSensor.md#withfocus-hoc), and [`@withFocus`](./FocusSensor.md#withfocus-decorator)
      - [`<GeoLocationSensor>`](./GeoLocationSensor.md), [`withGeoLocation()`](./GeoLocationSensor.md#withgeolocation-hoc), and [`@withGeoLocation`](./GeoLocationSensor.md#withgeolocation-decorator)
      - [`<HoverSensor>`](./HoverSensor.md), [`withHover()`](./HoverSensor.md#withhover-hoc), and [`@withHover`](./HoverSensor.md#withhover-decorator)
      - [`<MediaDeviceSensor>`](./MediaDeviceSensor.md), [`withMediaDevices()`](./MediaDeviceSensor.md#withmediadevices), and [`@withMediaDevices`](./MediaDeviceSensor.md#withmediadevices-1)
@@ -33,11 +35,9 @@
         - [`<ViewportScrollSensor>`](./ViewportSensor.md#viewportscrollsensor) and [`<ViewportObserverSensor>`](./ViewportSensor.md#viewportobserversensor)
      - [`<WindowScrollSensor>`](./WindowScrollSensor.md), [`withWindowScroll()`](./WindowScrollSensor.md#withwindowscroll-hoc), and [`@withWindowScroll`](./WindowScrollSensor.md#withwindowscroll-decorator)
      - [`<WindowSizeSensor>`](./WindowSizeSensor.md), [`withWindowSize()`](./WindowSizeSensor.md#withwindowsize-hoc), and [`@withWindowSize`](./WindowSizeSensor.md#withwindowsize-decorator)
-     - `ActiveSensor`, `withActive()`, and `@withActive`
-     - `FocusSensor`, `withFocus()`, and `@withFocus`
   - [Context](./Context.md)
      - [`<Provider>`](./Provider.md#provider), [`<Consumer>`](./Provider.md#consumer), [`withContext()`](./Provider.md#withcontext-hoc), and [`@withContext`](./Provider.md#withcontext-decorator)
-     - [`<Theme>`](./theme.md#theme), [`<Themed>`](./theme.md#themed), [`withTheme()`](./theme.md#withtheme), and `@withTheme`
+     - [`<Theme>`](./theme.md#theme), [`<Themed>`](./theme.md#themed), [`withTheme()`](./theme.md#withtheme-hoc), and [`@withTheme`](./theme.md#withtheme-decorator)
      - `<CssVars>`
      - [`<Router>`](./routing.md#router), [`<Route>`](./routing.md#route), [`withRoute()`](./routing.md#withroute), `@withRoute`, `go()`, and `<Go>`
      - [`<Translations>`](./translate.md#translations), [`<Translate>`](./translate.md#translate-or-t), [`<T>`](./translate.md#translate-or-t), [`withT()`](./translate.md#witht-hoc), and [`@withT`](./translate.md#witht-decorator)
@@ -46,12 +46,13 @@
      - [`<LocalStorage>`](./LocalStorage.md), `<SessionStorage>`, `<IndexedDb>`
      - [`<Speak>`](./Speak.md), [`<Vibrate>`](./Vibrate.md), [`<Alert>`](./Alert.md), `<Prompt>`, `<Confirm>`
      - [`go()`](./routing.md#go), `<Redirect>`, `<Link>`, [`<Sms>`](./Sms.md), [`<Mailto>`](./Mailto.md), and `<Tel>`
-     - [`<FullScreen>`](./FullScreen.md)
   - [Boundaries](./Boundaries.md)
      - [`<BrowserOnly>`](./BrowserOnly.md), [`<ServerOnly>`](./ServerOnly.md), and [`<ElectronOnly>`](./ElectronOnly.md)
-     - [`<ErrorBoundary>`](./ErrorBoundary.md) and `withErrorBoundary()`
+     - [`<ErrorBoundary>`](./ErrorBoundary.md) and [`withErrorBoundary()`](./ErrorBoundary.md#witherrorboundary-hoc)
      - `<CacheBoundary>`
   - [UI](./UI.md)
+     - [`<Portal>`](./Portal.md) and [`<Overlay>`](./Overlay.md)
+     - [`<FullScreen>`](./FullScreen.md)
      - [`<Slider>`](./Slider.md)
      - `<Overlay>`
   - [CSS resets](./CSS-resets.md)
@@ -66,6 +67,6 @@
   - Other
      - [`<Resolve>`](./Resolve.md), `<Fetch>`
      - [`getDisplayName()`](./getDisplayName.md)
-     - `<BrowserOnly>`, `<ServerOnly>`, and `<Environment>`
+     - [`<Portal>`](./Portal.md)
      - `<Locales>`
      - `<Draggable>`, `<Droppable>`, `<Parallax>`, `<Pin>`
