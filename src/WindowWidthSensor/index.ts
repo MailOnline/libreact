@@ -9,7 +9,7 @@ const throttle = require('throttle-debounce/throttle');
 export interface IWindowWidthSensorProps extends IUniversalInterfaceProps<IWindowWidthSensorState> {
   width?: number,
   throttle?: number,
-  onWidth: (state: IWindowWidthSensorState) => {},
+  onWidth?: (state: IWindowWidthSensorState) => {},
 }
 
 export interface IWindowWidthSensorState {
