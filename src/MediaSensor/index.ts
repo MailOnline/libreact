@@ -2,14 +2,11 @@ import {Component} from 'react';
 import {isClient} from '../util';
 import faccToHoc from '../util/faccToHoc';
 import renderProp from '../util/renderProp';
+import {IUniversalInterfaceProps} from '../typing';
 
-export interface IMediaSensorProps {
+export interface IMediaSensorProps extends IUniversalInterfaceProps<boolean> {
   matches?: boolean;
   query: string;
-  children?: React.ReactElement<any> | ((match: boolean) => React.ReactElement<any>);
-  render?: React.ReactElement<any> | ((match: boolean) => React.ReactElement<any>);
-  comp?: React.StatelessComponent<IMediaSensorState> | React.ComponentClass<IMediaSensorState>;
-  component?: React.StatelessComponent<IMediaSensorState> | React.ComponentClass<IMediaSensorState>;
 }
 
 export interface IMediaSensorState {
@@ -72,9 +69,15 @@ export class MediaSensor extends Component<IMediaSensorProps, IMediaSensorState>
 
     this.mql = window.matchMedia(query);
 
-    this.setState({
+    const newState = {
       matches: !!this.mql.matches
-    });
+    };
+
+    if (this.mounted) {      
+      this.setState(newState);
+    } else {
+      this.state = newState;
+    }
 
     this.mql.addListener(this.onMediaChange);
   }

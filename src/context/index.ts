@@ -7,7 +7,7 @@ const getOrCreateContext = (name: string) => {
   let context = contexts[name];
 
   if (!context) {
-    context = contexts[name] = React.createContext({});
+    context = contexts[name] = (React as any).createContext({});
   }
 
   return context;
