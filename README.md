@@ -2,7 +2,7 @@
 
 # libreact
 
-[![][npm-badge]][npm-url] [![][travis-badge]][travis-url] [![React Universal Interface](https://img.shields.io/badge/React-Universal%20Interface-green.svg)](https://github.com/streamich/react-universal-interface)
+[![][npm-badge]][npm-url] [![][travis-badge]][travis-url] [![React Universal Interface](https://img.shields.io/badge/React-Universal%20Interface-green.svg)](https://github.com/streamich/react-universal-interface) [![Greenkeeper badge](https://badges.greenkeeper.io/MailOnline/libreact.svg)](https://greenkeeper.io/)
 
 React standard library &mdash; must-have toolbox for any React project.
 
