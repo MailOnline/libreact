@@ -32,7 +32,7 @@
     "screenfull": "^3.3.2",
     "fast-af": "^0.1.0",
     "tslib": "^1.9.0",
-    "react-universal-interface": "^0.3.1",
+    "react-universal-interface": "^0.6.0",
     "react-focus-lock": "1.6.5"
   },
   "peerDependencies": {
