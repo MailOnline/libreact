@@ -1,0 +1,51 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - gitbook-cli > npm > request > hawk > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > request > hawk > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > request > hawk > sntp > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > node-gyp > request > hawk > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > request > hawk > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > node-gyp > request > hawk > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > request > hawk > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > node-gyp > request > hawk > sntp > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > request > hawk > sntp > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > node-gyp > request > hawk > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npm > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > node-gyp > request > hawk > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > node-gyp > request > hawk > sntp > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gitbook-cli > npmi > npm > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-04T22:07:31.194Z'
+  SNYK-JS-LODASH-567746:
+    - gitbook-cli > lodash:
+        patched: '2021-08-04T22:07:31.194Z'
+  'npm:minimatch:20160620':
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2021-08-04T22:07:31.194Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2021-08-04T22:07:31.194Z'
+  'npm:tunnel-agent:20170305':
+    - gitbook-cli > npmi > npm > request > tunnel-agent:
+        patched: '2021-08-04T22:07:31.194Z'
