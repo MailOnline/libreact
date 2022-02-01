@@ -43,7 +43,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.10",
     "@storybook/addon-links": "^3.3.10",
-    "@storybook/react": "^3.3.10",
+    "@storybook/react": "^4.0.0",
     "@types/chai": "4.1.1",
     "@types/jest": "22.0.1",
     "@types/node": "9.3.0",
